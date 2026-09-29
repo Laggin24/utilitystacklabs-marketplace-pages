@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proposed DPA Details — Macro Usage Exporter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><a href="index.html">UtilityStack Labs</a> / DPA Details</p>
+    <h1>Proposed DPA Details for Macro Usage Exporter</h1>
+    <p><strong>Draft for legal review — not an effective customer DPA.</strong> This page is not yet incorporated into the app's Marketplace Provider-Specific Terms. Publication of this page alone does not create a data processing agreement. Do not rely on it as an executed agreement.</p>
+    <p>This draft is intended to accompany the <a href="https://bonterms.com/standard/dpa-v2-attachment-version">Bonterms Data Protection Addendum v2.0 (Attachment Version)</a>, without changing that standard text. It concerns Macro Usage Exporter for Confluence, private Marketplace version 2.2.0. Any use as a contract requires completed details, applicable party agreement and incorporation into the customer agreement.</p>
+
+    <h2>Key terms</h2>
+    <p><strong>Proposed Main Agreement:</strong> <a href="https://www.atlassian.com/licensing/marketplace/end-user-agreement-v1">Bonterms Standard End User Agreement v1.0</a> for this app. <strong>Proposed DPA effective date:</strong> the effective date of the customer's first Order under that agreement, subject to legal review of whether this reference completes the DPA's date field. <strong>Designated EU governing law and member state:</strong> not selected; legal review is required if the EU transfer clauses apply.</p>
+    <p><strong>Proposed direct subprocessor:</strong> Atlassian Pty Ltd, for Forge hosting and compute used by the app. Atlassian's <a href="https://www.atlassian.com/legal/sub-processors">current subprocessor list</a> describes its downstream service providers, functions and processing locations. No external app backend or report-data egress is declared. The exact customer-facing scope and notice method require legal and operational review.</p>
+
+    <h2>Parties and processing</h2>
+    <p><strong>Provider / proposed data importer:</strong> Nathan Charles Acree, sole proprietor using UtilityStack Labs as an informal brand, not a separate legal entity or registered trade name. Privacy/legal contact: <a href="mailto:privacy@utilitystacklabs.com">privacy@utilitystacklabs.com</a>. Business/legal notice address: 1 Xebec Rd, Palmyra, VA 22963, United States. Proposed role: processor for customer-directed report metadata.</p>
+    <p><strong>Customer / proposed data exporter:</strong> the party placing the applicable Marketplace Order. The customer's legal name, data-protection contact, main address, activities and controller-or-processor role must be identified through that Order or another agreed record before these Details can be treated as complete.</p>
+    <p><strong>Service and purpose:</strong> a signed-in user supplies one exact macro key and optionally up to 20 space keys. The app searches Confluence as that user, displays matching page-level metadata and enables a CSV only after the scan completes. It does not change pages or run scheduled scans.</p>
+    <p><strong>Data subjects:</strong> Confluence users and any identifiable persons represented in customer-controlled page titles or metadata, potentially including personnel and business contacts. <strong>Personal data:</strong> search inputs if identifying; page IDs, titles, space keys, update timestamps, links and site URL. Search responses can also contain account or author metadata, which the app handles transiently and excludes from report rows and CSV files. It does not request page bodies.</p>
+    <p><strong>Frequency and retention:</strong> on-demand when a user runs a report, not continuous background collection. Processing occurs during the app's provision and active report session. The publisher has no report database; downloaded CSV files are retained by the customer on the user's device. Platform logs are governed separately. <strong>Sensitive or special-category data:</strong> the app does not seek it, and the Main Agreement restricts customer submission of Sensitive Data, but customer-controlled titles could contain it; the required Bonterms selection and any restrictions remain subject to legal review.</p>
+
+    <h2>Security measures and transfers</h2>
+    <p>The app uses Atlassian-hosted Forge and Confluence authentication, the signed-in user's permissions via <code>api.asUser()</code>, and only the <code>search:confluence</code> scope. It has no external report backend or app report storage. Its code validates search inputs and cursors, bounds pagination, withholds incomplete CSV exports, validates HTTPS site URLs, renders result text without HTML interpretation, neutralizes spreadsheet formulas in CSV cells, and does not intentionally log report rows, queries or credentials. This does not claim a separate certification or a particular data-residency guarantee.</p>
+    <p>Any cross-border transfer mechanism, EU supervisory authority and EU transfer-clause selections must be established for the actual customer and processing path. No certification of Nathan Charles Acree under a Data Privacy Framework is claimed.</p>
+
+    <h2>Proposed narrow Additional Term — not agreed</h2>
+    <p>For changes to subprocessors engaged by Atlassian Pty Ltd in providing Forge for the Service, Section 4.3's 30-day advance-notice period does not apply to those Atlassian downstream changes. Provider will subscribe to Atlassian's subprocessor-change notices and notify Customer by the Subprocessor Notice Method as soon as reasonably practicable after Provider receives Atlassian's notice, before the new downstream subprocessor begins processing whenever Atlassian gives Provider advance notice. No fixed advance-notice period is promised for those downstream changes. Customer may object on reasonable data-protection grounds under Section 4.4; Provider will relay the objection to Atlassian and pursue the resolution or termination remedy available under the applicable agreements. The 30-day advance-notice requirement remains unchanged for a new Subprocessor engaged directly by Provider.</p>
+    <p class="note">This proposed exception has not been approved or made effective. Before adoption, the parties must confirm a working upstream-notice subscription, customer-notification channel and objection process, and review its adequacy under applicable data-protection law.</p>
+    <p><a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
+  </main>
+</body>
+</html>
