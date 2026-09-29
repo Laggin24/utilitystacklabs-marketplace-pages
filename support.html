@@ -15,12 +15,13 @@
     <h2>Use the app</h2>
     <ol>
       <li>Open <strong>Apps → Macro Usage Exporter</strong> in Confluence.</li>
-      <li>Enter the exact macro key. Optionally enter up to 20 comma-separated space keys.</li>
+      <li>Enter one exact macro key. Optionally enter up to 20 comma-separated space keys, not space names.</li>
       <li>Select <strong>Find pages</strong>. Download the CSV only when the scan says it is complete.</li>
     </ol>
-    <p>The report has one row per matching page, not per macro instance. It includes only pages the signed-in user can view and Confluence search has indexed. It searches pages, not blog posts. A zero-result report cannot rule out restricted or unindexed content.</p>
+    <p>A site administrator installs the app. Licensed Confluence users run reports within their own page permissions. A Confluence app administrator can check <strong>Confluence administration → Macro Usage</strong> for the indexed macro key; the macro vendor's documentation may also identify it. The editor's display name can differ from that key. For example, an Info panel may be indexed as <code>panel</code>; this is not a default or a promise of results on every site.</p>
+    <p>The report has one row per matching page, not per macro instance. It includes only pages the signed-in user can view and Confluence search has indexed. It searches pages, not blog posts. A zero-result report cannot rule out restricted or unindexed content. The on-screen table previews up to 200 pages; the completed CSV includes every returned page up to the report limit. Open the downloaded CSV using your spreadsheet's CSV import/open workflow and handle page titles and links according to your organization's policy.</p>
     <h2>If a scan fails</h2>
-    <p>Cancelled, failed, and oversized scans do not offer a complete CSV. If Confluence is limiting searches, wait and retry. If a report exceeds 10,000 unique pages, narrow the space selection.</p>
+    <p>Cancelled, failed, and oversized scans do not offer a complete CSV. If Confluence is limiting searches, follow the retry timing shown. If a report exceeds 10,000 unique pages or too many search pages, narrow the space selection.</p>
     <p><a href="privacy.html">Privacy policy</a></p>
   </main>
 </body>
