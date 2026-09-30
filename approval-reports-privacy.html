@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Approval Reports for Jira Service Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><a href="index.html">UtilityStack Labs</a> / Approval Reports privacy</p>
+    <h1>Privacy policy for Approval Reports</h1>
+    <p>Effective September 29, 2026. Approval Reports for Jira Service Management is provided by Nathan Charles Acree, sole proprietor using UtilityStack Labs as an informal brand. Business/legal notice address: 1 Xebec Rd, Palmyra, VA 22963, United States. Contact <a href="mailto:privacy@utilitystacklabs.com">privacy@utilitystacklabs.com</a> for privacy questions.</p>
+    <h2>Information used for a report</h2>
+    <p>When a signed-in user runs a report, the app uses the selected service-project key and request-created dates to search Jira as that user. For matching requests it uses request keys, summaries and creation dates, and native Jira Service Management approval-stage IDs, names, decisions, stage-created/completed dates, approver account IDs, display names and decisions. It constructs a request link from the verified Jira site URL and request key. These fields can contain personal information. The app does not request issue descriptions, comments or attachments for this report.</p>
+    <h2>Processing and storage</h2>
+    <p>Report data passes through Atlassian Jira Service Management and Atlassian-hosted Forge to the user's browser. The app uses <code>api.asUser()</code> and declares no external report-data egress, remote backend, app database or Forge report storage. Its code does not intentionally log report rows, filter values, credentials or tokens. Atlassian may process platform logs under its own terms. Rows remain in the active browser page until it is closed or cleared/replaced; a CSV is generated in the browser only after a complete scan. A downloaded CSV remains on the user's device under their organization's control and cannot be remotely deleted by us.</p>
+    <p>Separately, we receive the contact details, messages and attachments customers choose to send for support, privacy or security help. Please do not send reports or sensitive request details unless necessary and a suitable channel has been arranged. Atlassian may also make Marketplace licensing, sales, billing and related business records available to us as publisher. We use records actually made available to provide support, administer the listing, reconcile payments and meet applicable obligations.</p>
+    <h2>Retention, permissions and requests</h2>
+    <p>There is no retained app report database. Ordinary support messages and customer-provided attachments may be retained for up to 12 months after the last support interaction and deleted when no longer needed. Security, fraud, dispute, accounting/tax or legally required records may be kept longer where reasonably necessary or required. Marketplace business-record retention depends on applicable obligations; we do not claim a fixed period for those records.</p>
+    <p>The app requests <code>read:jira-work</code> for scoped request search and minimal request metadata, and <code>read:servicedesk-request</code> for visible service-project discovery and native approval lookup. Jira permissions control what the signed-in user can access. A complete report does not establish that restricted, deleted or unindexed requests do not exist.</p>
+    <p>For requests about information we actually control, email <a href="mailto:privacy@utilitystacklabs.com">privacy@utilitystacklabs.com</a>. We will verify and handle applicable requests; we do not promise automatic deletion or rights that do not apply. Customer-held CSVs and Atlassian-controlled records may require contacting the customer or Atlassian. This site is hosted on GitHub Pages, whose own practices apply to visits. We will revise the effective date if our practices change.</p>
+    <p><a href="approval-reports-support.html">Support</a> · <a href="security.html">Security reporting</a></p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Approval Reports for Jira Service Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><a href="index.html">UtilityStack Labs</a> / Approval Reports support</p>
+    <h1>Approval Reports support</h1>
+    <p>For help or bug reports, email <a href="mailto:support@utilitystacklabs.com">support@utilitystacklabs.com</a>. Send privacy requests to <a href="mailto:privacy@utilitystacklabs.com">privacy@utilitystacklabs.com</a> and security reports to <a href="mailto:security@utilitystacklabs.com">security@utilitystacklabs.com</a>.</p>
+    <h2>Run a report</h2>
+    <ol>
+      <li>Open <strong>Apps → Approval Reports for Jira Service Management</strong> in Jira.</li>
+      <li>Choose a visible service project and a request-created date range of up to 90 days.</li>
+      <li>Select <strong>Run report</strong>. Review the complete results, optionally filter the on-screen rows by decision, and download the full CSV only after the scan completes.</li>
+    </ol>
+    <p>One row represents one approver in one native approval stage on one request. Separate stages remain separate even on the same request. Pending, approved and declined are the decisions currently returned by Jira. Stage-created and stage-completed values are stage timestamps, not timestamps for an individual's decision. The report is a current, permission-scoped view, not a permanent approval ledger or historical audit archive.</p>
+    <p>The signed-in user's Jira permissions determine which service projects, requests and approval data can be returned. Jira search indexing and changes during a scan may affect the result. A report marked complete means all requests returned within the selected scope were successfully examined; it cannot prove that inaccessible or deleted requests do not exist. The screen shows at most 200 rows; the completed CSV includes all returned rows, up to 10,000.</p>
+    <h2>If a scan does not complete</h2>
+    <p>No complete CSV is offered after cancellation, a failed request or an exceeded limit. Narrow the date range if the scan reaches 500 requests, 50 search pages, 10,000 rows or the per-request approval-stage limit. For rate limits, follow the retry timing in the error and try again later. If you contact support, include the service project key, date range and error message. Do not email request summaries, approver lists, CSVs, credentials or other customer data unless we arrange a suitable channel.</p>
+    <p><a href="approval-reports-privacy.html">Privacy policy</a> · <a href="security.html">Security reporting</a></p>
+  </main>
+</body>
+</html>
