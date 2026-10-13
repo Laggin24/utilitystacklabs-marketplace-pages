@@ -19,6 +19,16 @@
     </ol>
     <p>One row represents one approver in one native approval stage on one request. Separate stages remain separate even on the same request. Pending, approved and declined are the decisions currently returned by Jira. Stage-created and stage-completed values are stage timestamps, not timestamps for an individual's decision. The report is a current, permission-scoped view, not a permanent approval ledger or historical audit archive.</p>
     <p>The signed-in user's Jira permissions determine which service projects, requests and approval data can be returned. Jira search indexing and changes during a scan may affect the result. A report marked complete means all requests returned within the selected scope were successfully examined; it cannot prove that inaccessible or deleted requests do not exist. The screen shows at most 200 rows; the completed CSV includes all returned rows, up to 10,000.</p>
+    <h2>Report on pending approvals</h2>
+    <ol>
+      <li>Use a Jira Service Management request with a native approval step configured in its workflow. Assign at least one approver and move the request into that approval step. A status named “Pending approval” alone does not create a native approval stage.</li>
+      <li>Confirm the request displays its native approval panel and an undecided approver. Leave the approval pending.</li>
+      <li>Sign in as a user who can view that service project, request and approval data. Open the app and select that project.</li>
+      <li>Choose dates containing the request's <strong>creation date</strong>, not the date it entered the approval step. The range must be 90 days or less.</li>
+      <li>Select <strong>Run report</strong> and wait for “Complete”. Select <strong>Pending</strong> in the decision filter to display pending approver rows.</li>
+      <li>Select <strong>Download complete CSV (all rows)</strong>. The CSV includes all completed report rows; the on-screen decision filter does not limit the CSV.</li>
+    </ol>
+    <p>If requests are examined but zero approval stages are returned, confirm that those exact requests have native JSM approval stages visible to the same signed-in user. A custom status, custom approval field or third-party approval workflow is not a native JSM approval stage. If the native approval panel is visible but the report still returns zero stages, contact support with the displayed counts and date range; avoid sending customer content.</p>
     <h2>If a scan does not complete</h2>
     <p>No complete CSV is offered after cancellation, a failed request or an exceeded limit. Narrow the date range if the scan reaches 500 requests, 50 search pages, 10,000 rows or the per-request approval-stage limit. For rate limits, follow the retry timing in the error and try again later. If you contact support, include the service project key, date range and error message. Do not email request summaries, approver lists, CSVs, credentials or other customer data unless we arrange a suitable channel.</p>
     <p><a href="approval-reports-privacy.html">Privacy policy</a> · <a href="security.html">Security reporting</a></p>
