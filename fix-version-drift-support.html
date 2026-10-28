@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Fix Version Drift for Jira</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><a href="index.html">UtilityStack Labs</a> / Fix Version Drift support</p>
+    <h1>Fix Version Drift support</h1>
+    <p class="note">Pre-release documentation. The app is undergoing private verification and is not publicly available on Marketplace.</p>
+    <p>For help, email <a href="mailto:support@utilitystacklabs.com">support@utilitystacklabs.com</a>. Send privacy requests to <a href="mailto:privacy@utilitystacklabs.com">privacy@utilitystacklabs.com</a> and security reports to <a href="mailto:security@utilitystacklabs.com">security@utilitystacklabs.com</a>.</p>
+    <h2 id="hours">Support hours</h2>
+    <p>Monday–Friday, 10:00 a.m.–4:00 p.m. Eastern Time (America/New_York), excluding U.S. federal holidays. Our target response time is 48 hours. This is a response target, not a guaranteed resolution time or a 24/7 commitment.</p>
+    <h2>Run a comparison</h2>
+    <ol>
+      <li>Open <strong>Apps → Fix Version Drift</strong> in Jira.</li>
+      <li>Enter the key of one company-managed Jira Software project you can view.</li>
+      <li>Select <strong>Check versions</strong>. The app searches visible subtasks outside the Done status category and compares their Fix Version ID sets with their direct parents.</li>
+      <li>Review differences and comparisons marked <strong>Not comparable</strong>. Differences may be intentional; the app does not change Jira.</li>
+      <li>After the scan completes, select <strong>Download comparison CSV</strong>. The CSV includes all scanned subtasks, including matches and unknown comparisons. The on-screen matching-row toggle does not limit the CSV.</li>
+    </ol>
+    <p>Version names and order do not determine equality: version ID sets do. Two empty sets match. One empty set, different sets and unavailable data have distinct outcomes. A parent that cannot be read is not treated as an empty set.</p>
+    <h2>Coverage and limits</h2>
+    <p>The normal scan supports up to 5,000 visible open subtasks, with a 100-page limit per search traversal. The screen shows at most 200 selected rows. Jira permissions and app-access rules determine what can be returned. Search indexing and changes during the scan may affect results; this is a scan window, not an atomic snapshot or proof that inaccessible work does not exist.</p>
+    <p>No complete CSV is offered after cancellation, failed requests, inconsistent pagination or an exceeded limit. Cancellation stops subsequent reads and discards the unfinished report; a request already sent may finish. For rate limits, follow the displayed retry timing and try later. Projects beyond the supported limit cannot be fully reported by this release.</p>
+    <p>For a bug report, send the app version, error text and displayed counts. Avoid sending CSVs, version names, issue content, credentials or tokens unless needed and a suitable channel has been arranged. Downloaded files remain under your organization's control.</p>
+    <p><a href="fix-version-drift-privacy.html">Privacy draft</a> · <a href="fix-version-drift-dpa.html">Proposed DPA Details</a> · <a href="security.html">Security reporting</a></p>
+  </main>
+</body>
+</html>
